@@ -3,9 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Parchment",
-    platforms: [
-        iOS(.v10)
-    ],
+    platforms: [.iOS("9.0")],
     products: [
         .library(name: "Parchment", targets: ["Parchment"]),
     ],
@@ -15,7 +13,7 @@ let package = Package(
             path: "Parchment",
             linkerSettings: [
                 .unsafeFlags([
-                    "-weak_framework", "SwiftUI",
+                    
                 ]),
             ]
         ),
