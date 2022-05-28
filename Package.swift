@@ -11,6 +11,9 @@ let package = Package(
         .target(
             name: "Parchment",
             path: "Parchment"
-        ),
+        )
+    ],
+    swiftLanguageVersions: [
+        .v5
     ]
 )
